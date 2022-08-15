@@ -5,10 +5,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     const NewWithdrawFieldValue = parseFloat(NewWithdrawFieldValueString);
 
     // Update "Withdraw Element Value"
-    const previousWithdrawAmountElement = document.getElementById('withdraw-amount').innerText;
-    const previousWithdrawAmountValue = parseFloat(previousWithdrawAmountElement);
+    const previousWithdrawAmountElement = document.getElementById('withdraw-amount');
+    const previousWithdrawAmountValueString = previousWithdrawAmountElement.innerText;
+    const previousWithdrawAmountValue = parseFloat(previousWithdrawAmountValueString);
     const totalWithdrawAmount = previousWithdrawAmountValue + NewWithdrawFieldValue;
-    previousWithdrawAmountElement = totalWithdrawAmount;
+    previousWithdrawAmountElement.innerText = totalWithdrawAmount;
 
     // Update "Balance Element Value"
     const previousBalanceAmountElement = document.getElementById('balance-amount');
