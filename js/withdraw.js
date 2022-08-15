@@ -27,7 +27,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     const totalWithdrawAmount = previousWithdrawAmountValue + NewWithdrawFieldValue;
     previousWithdrawAmountElement.innerText = totalWithdrawAmount;
 
-    const totalBalance = previousBalanceAmountValue - totalWithdrawAmount;
+    const totalBalance = previousBalanceAmountValue - NewWithdrawFieldValue;
     previousBalanceAmountElement.innerText = totalBalance;
 
      // Clear Field After Submit Value using Empty String.
