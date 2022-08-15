@@ -17,8 +17,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const previousBalanceAmountValue = parseFloat(previousBalanceAmountValueString);
     const totalBalance = previousBalanceAmountValue + NewDepositValue;
     previousBalanceAmountElement.innerText = totalBalance;
-
-
+    
     // Clear Field After Submit Value using Empty String.
     NewDepositFeild.value = '';
 
