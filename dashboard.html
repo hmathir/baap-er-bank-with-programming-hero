@@ -18,15 +18,15 @@
             <div class="grid grid-cols-3 w-9/12 mx-auto mt-10 gap-4">
                 <div class="bg-orange-400 rounded-xl p-10 text-center text-white">
                     <h4 class="text-3xl">Deposit</h4>
-                    <h1 class="text-5xl">$00</h1>
+                    <h1 class="text-5xl">$<span id="deposit-amount">00</span></h1>
                 </div>
                 <div class="bg-violet-500 rounded-xl p-10 text-center text-white">
                     <h4 class="text-3xl">Withdraw</h4>
-                    <h1 class="text-5xl">$00</h1>
+                    <h1 class="text-5xl">$<span id="withdraw-amount">00</span></h1>
                 </div>
                 <div class="bg-green-400 rounded-xl p-10 text-center text-white">
                     <h4 class="text-3xl">Balane</h4>
-                    <h1 class="text-5xl">$1240</h1>
+                    <h1 class="text-5xl">$<span id="balance-amount">1200</span></h1>
                 </div>
             </div>
         </section>
@@ -54,6 +54,9 @@
             </div>
         </section>
     </main>
+
+    <script src="/js/deposit.js"></script>
+    <script src="/js/withdraw.js"></script>
 </body>
 
 </html>
