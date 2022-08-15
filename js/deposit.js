@@ -3,6 +3,11 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const NewDepositFeild = document.getElementById('deposit-input');
     const NewDepositValueString = NewDepositFeild.value;
     const NewDepositValue = parseFloat(NewDepositValueString);
+    NewDepositFeild.value = '';
+    if(isNaN(NewDepositValue)){
+        alert('Input Valid Amount.');
+        return;
+    }
 
     // Update "Deposit Element Value"
     const previousDepositAmountElement = document.getElementById('deposit-amount');
@@ -17,7 +22,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const previousBalanceAmountValue = parseFloat(previousBalanceAmountValueString);
     const totalBalance = previousBalanceAmountValue + NewDepositValue;
     previousBalanceAmountElement.innerText = totalBalance;
-    
+
     // Clear Field After Submit Value using Empty String.
     NewDepositFeild.value = '';
 
